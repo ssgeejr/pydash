@@ -1,3 +1,5 @@
+*originally copied from: https://github.com/Modulus/pydash-docker*
+
 # pydash-docker
 build pydash-docker image
 
@@ -8,4 +10,3 @@ run pydash-docker
     $ docker run -it --privileged=true --net=host --pid=host --ipc=host -p 8000:80 pydash-docker
 	
 	
-*originally copied from: https://github.com/Modulus/pydash-docker*

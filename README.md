@@ -1,8 +1,8 @@
-pyDash - v1.4.6
-======
-
 *originally copied from: https://gitlab.com/k3oni/pydash*
 
+
+pyDash - v1.4.6
+======
 
 [![Flattr this](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/2630601/k3onipydash-on-GitHub "Flattr this")
 
