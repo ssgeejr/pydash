@@ -1,0 +1,5 @@
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get -y install git python python-pip apache2 libapache2-mod-wsgi
+RUN pip install -U pip && pip install -U django==1.6.8
+
