@@ -1,12 +1,20 @@
-*originally copied from: https://github.com/Modulus/pydash-docker*
-
 # pydash-docker
-build pydash-docker image
+Portable docker image for a standalone pydash implementation
 
-    $ docker build -t pydash-docker .
 
-run pydash-docker
+### Build the re-usable python image
+```
+    $ docker build -t pythonpip -f Dockerfile.python .
+```
 
-    $ docker run -it --privileged=true --net=host --pid=host --ipc=host -p 8000:80 pydash-docker
+### Build the re-usable python image
+```
+    $ docker build -t sprintdash -f Dockerfile.txt .
+```
+
+### run pydash docker Image
+```
+    $ docker run --rm --name pydash -it --privileged=true --net=host --pid=host --ipc=host -p 9180:9180 sprintdash
+```
 	
 	

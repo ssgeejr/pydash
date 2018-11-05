@@ -1,11 +1,6 @@
-#FROM ubuntu:14.04
-FROM pydash:core
-
-#RUN apt-get update && apt-get -y install git python python-pip apache2 libapache2-mod-wsgi
-
+FROM pythonpip
 
 RUN git clone https://github.com/ssgeejr/pydash.git 
-#ADD pydash.conf /etc/apache2/sites-enabled/pydash.conf
 
 RUN cd pydash && \
     git checkout develop && \
@@ -15,5 +10,3 @@ RUN cd pydash && \
 WORKDIR /pydash
 EXPOSE :9180
 CMD ["python", "manage.py", "runserver","0.0.0.0:9180"]
-
-#CMD service apache2 start;/usr/bin/tail -f /dev/null
